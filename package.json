@@ -1,0 +1,76 @@
+{
+    "name": "vscode-marko-peek",
+    "displayName": "Marko Peek",
+    "description": "Visual Studio Code extension for code navigation of component files in Marko projects",
+    "version": "0.0.1",
+    "publisher": "martinkchang",
+    "license": "MIT",
+    "keywords": [
+        "marko",
+        "peek",
+        "definition",
+        "hyperclick"
+    ],
+    "bugs": {
+        "url": "https://github.com/mkchang/vscode-marko-peek/issues"
+    },
+    "homepage": "https://github.com/mkchang/vscode-marko-peek/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mkchang/vscode-marko-peek.git"
+    },
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./src/extension",
+    "contributes": {
+        "commands": [],
+        "configuration": {
+            "type": "object",
+            "title": "File Peek extension configuration",
+            "properties": {
+                "vscode-marko-peek.activeLanguages": {
+                    "type": "array",
+                    "default": [
+                        "marko"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "A list of vscode language names where the extension should be used."
+                },
+                "vscode-marko-peek.searchFileExtensions": {
+                    "type": "array",
+                    "default": [
+                        ".marko"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "A list of extensions that should be tried for finding peeked files.  These are tried in order as further extensions of the potential file name and also as alternative file endings instead of the existing file extension (if available)."
+                }
+            }
+        },
+        "languages": [{
+            "id": "marko",
+            "extensions": [".marko"]
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
