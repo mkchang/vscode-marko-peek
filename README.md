@@ -1,6 +1,8 @@
-# vscode-marko-peek README
+# vscode-marko-peek
 
 Visual Studio Code extension for code navigation of component files in Marko projects
+
+[vscode-marko-peek on the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=martinkchang.vscode-marko-peek)
 
 ## Features
 

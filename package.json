@@ -2,7 +2,8 @@
     "name": "vscode-marko-peek",
     "displayName": "Marko Peek",
     "description": "Visual Studio Code extension for code navigation of component files in Marko projects",
-    "version": "0.0.1",
+    "version": "1.0.1",
+    "icon": "images/marko_icon.png",
     "publisher": "martinkchang",
     "license": "MIT",
     "keywords": [
