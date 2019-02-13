@@ -31,7 +31,7 @@ See editor docs for more details
 
 There are 2 settings options that allows you to customize targeted files and language in which plugin is activated. By default they look like this:
 ```
- "vscode-marko-peek.activeLanguages": [
+  "vscode-marko-peek.activeLanguages": [
     "marko"
   ],
   "vscode-marko-peek.searchFileExtensions": [
@@ -43,8 +43,10 @@ If you'd like for plugin to be activated in other languages, add that extension 
 
 ## Known Issues
 
-## Release Notes
+## Changelog
 
-### 1.0.0
+See [CHANGELOG.md](CHANGELOG.md)
 
-Initial release, built on the shoulders of [vscode-file-peek](https://github.com/abierbaum/vscode-file-peek), [vscode-vue-peek](https://github.com/fuzinato/vscode-vue-peek), and [vscode-css-peek](https://github.com/pranaygp/vscode-css-peek). 
+## Acknowledgements
+
+vscode-marko-peek is built on the shoulders of [vscode-file-peek](https://github.com/abierbaum/vscode-file-peek), [vscode-vue-peek](https://github.com/fuzinato/vscode-vue-peek), and [vscode-css-peek](https://github.com/pranaygp/vscode-css-peek). 
