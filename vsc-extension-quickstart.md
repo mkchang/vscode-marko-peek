@@ -31,3 +31,7 @@ We pass the function containing the implementation of the command as the second 
 * Make changes to `test/extension.test.js` or create new test files inside the `test` folder.
     * By convention, the test runner will only consider files matching the name pattern `**.test.js`.
     * You can create folders inside the `test` folder to structure your tests any way you want.
+
+## Publish
+* `npx vsce package`
+* `npx vsce publish` (may need to regen new Personal Access Token from https://dev.azure.com/, and `npx vsce login <publisher name>`)

@@ -3,6 +3,10 @@
 
 ## [Unreleased]
 
+## [1.1.1] - 2021-02-09
+- Undo unnecessary vscode engine change
+- Update docs on publishing extension package
+
 ## [1.1.0] - 2021-02-09
 ### Added
 - Support for nested `.marko` files, e.g. `custom-tag/src/index.marko`, instead of only `custom-tag/index.marko`
