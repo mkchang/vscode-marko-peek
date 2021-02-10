@@ -44,6 +44,7 @@ You can add support for any file extension you like. To allow plugin to search f
 If you'd like for plugin to be activated in other languages, add that extension (i.e. "js") to _activeLanguages_ array.
 
 ## Known Issues
+- Relies on glob pattterns for finding files, so cannot exclude folders (e.g., if you have `*.marko` files as part of some test fixture in a `/test/` folder, they will get picked up too as if part of that component).
 
 ## Changelog
 
