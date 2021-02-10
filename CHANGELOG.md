@@ -3,6 +3,11 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-02-09
+### Added
+- Support for nested `.marko` files, e.g. `custom-tag/src/index.marko`, instead of only `custom-tag/index.marko`
+- Support for `.marko` files named after the component, e.g. `custom-tag.marko`, instead of only `custom-tag/index.marko`
+
 ## [1.0.2] - 2019-02-12
 ### Security
 - `lodash` dev dependency: CVE-2018-16487, upgrade to >= 4.17.11

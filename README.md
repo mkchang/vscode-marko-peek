@@ -20,7 +20,9 @@ The extension supports:
  * Go To: jump directly to the css file or open it in a new editor (`F12` or `Ctrl-click/Cmd+click`)
  * Hover: show the definition in a hover over the symbol (`Ctrl+hover`)
 
-By default searches only for .marko files from other .marko files (e.g. going to a child component from a parent). See [Extension Settings](#extension-settings) for more details on configuring other extensions.
+By default searches only for .marko files from other .marko files (e.g. going to a child component from a parent). For more details on how to structure Marko files, checkout [the docs on how tags are discovered](https://markojs.com/docs/custom-tags/#how-tags-are-discovered).
+
+See [Extension Settings](#extension-settings) for more details on configuring other extensions.
 
 See editor docs for more details
 

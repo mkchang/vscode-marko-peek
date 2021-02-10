@@ -25,7 +25,26 @@ module.exports = class PeekFileDefinitionProvider {
      * @returns {Thenable} vscode.Uri[] 
      */
     searchFilePath(fileName) {
-        return vscode.workspace.findFiles(`**/${fileName}/*.marko`); // Returns promise
+        let filePaths;
+        return (
+            vscode.workspace.findFiles(`**/${fileName}/*.marko`).then(path => {
+                filePaths = [].concat.apply([], path);
+                if (filePaths.length) {
+                    return path;
+                } else {
+                    return (
+                        vscode.workspace.findFiles(`**/${fileName}/**/*.marko`).then(path => {
+                            filePaths = [].concat.apply([], path);
+                            if (filePaths.length) {
+                                return path;
+                            } else {
+                                return vscode.workspace.findFiles(`**/${fileName}.marko`);
+                            }
+                        })
+                    );
+                }
+            })
+        ); // Returns promise
     }
 
     /**
