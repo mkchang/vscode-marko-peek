@@ -7,6 +7,8 @@
 ### Added
 - Support for nested `.marko` files, e.g. `custom-tag/src/index.marko`, instead of only `custom-tag/index.marko`
 - Support for `.marko` files named after the component, e.g. `custom-tag.marko`, instead of only `custom-tag/index.marko`
+### Security
+- Update subdepencies flagged by Dependabot: minimist, acorn, eslint-utils, lodash, diff, js-yaml, fstream, tar
 
 ## [1.0.2] - 2019-02-12
 ### Security
