@@ -1,4 +1,5 @@
-# vscode-marko-peek
+# [DEPRECATED] vscode-marko-peek
+> This project has been deprecated in favor of the marko-language-server powered extension [Marko VSCode](https://marketplace.visualstudio.com/items?itemName=Marko-JS.marko-vscode)
 
 Visual Studio Code extension for code navigation of component files in Marko projects
 
